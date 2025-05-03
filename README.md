@@ -13,3 +13,7 @@ First contact with html and css
   -alt + arrows: move a line up and down
 
 - CSS: los <a>, <button>, etc no cogen el color del body en el browser pero para que lo hagan hay que poner color: inhert (hereda el color del "padre-body")
+
+- blocks(nova linha e sozinho): <div>, <h1>, <p>...
+- inline(mesma linha e nem width height margin): <a>, <span>... 
+- css{ display: inline-block : o melhor das dois opções
