@@ -11,5 +11,3 @@ First contact with html and css
   -ctrl ç: comment code
   -ctrl b: hide side bar
   -alt + arrows: move a line up and down
-
-- Tags: -<p>: paragraph ;;; -<h1, h2, h3, h4...>: titles ;;; -<a href="">: link
