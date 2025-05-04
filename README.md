@@ -17,3 +17,6 @@ First contact with html and css
 - blocks(nova linha e sozinho): <div>, <h1>, <p>...
 - inline(mesma linha e nem width height margin): <a>, <span>... 
 - css{ display: inline-block : o melhor das dois opções
+
+<p> - imagens: mejor en svg (siempre hd), svg y png tienen bg transparente, no >1MB en la web </p>
+<a href="https://squoosh.app/">Squoosh</a>  
