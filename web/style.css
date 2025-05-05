@@ -1,8 +1,13 @@
-img {
-    max-width: 100%;
-    width: 600px;
-    display: block;
+span {
+    background: #ddd;
+    display: inline-block;
 }
-body {
-    background-color: lightblue;
+span {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    /* padding: 100px; */
+    border: 20px solid fuchsia;
+    border-top: 10px solid blue;
 }
