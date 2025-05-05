@@ -1,13 +1,29 @@
-span {
-    background: #ddd;
-    display: inline-block;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
-span {
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    /* padding: 100px; */
-    border: 20px solid fuchsia;
-    border-top: 10px solid blue;
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 0px;
+}
+.item {
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    /* margin: 20px; */
+    padding: 20px;
+    border-radius: 4px;
+    display: grid;
+}
+.comprar {
+    background-color: #a8f;
+    color: #103;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
