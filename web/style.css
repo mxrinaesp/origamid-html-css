@@ -24,6 +24,10 @@ h2 {
 }
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    height: 600px;
+    grid-template-columns: auto auto;
     gap: 20px;
+    /* align-content: center; */
+    /* justify-content: space-evenly; */
+    place-content: center space-evenly;
 }
