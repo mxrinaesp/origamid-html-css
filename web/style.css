@@ -1,19 +1,34 @@
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.foto {
+    grid-column: 1/-1;
+}
+.descricao {
+    grid-column: 1/-1;
+}
+.comprar {
+    grid-column: 1/-1;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+h1, p {
+    margin: 0px;
 }
 h1 {
-    text-align: center;
+    font-size: 48px;
+    line-height: 1;
 }
-h2 {
-    margin-top: 0px;
+p, span {
+    font-size: 20px;
 }
-.item {
-    background-color: #f7f7f7;
-    border: 1px solid #e7e7e7;
-    /* margin: 20px; */
-    padding: 20px;
+img {
+    max-width: 100%;
     border-radius: 4px;
-    display: grid;
 }
 .comprar {
     background-color: #a8f;
@@ -21,13 +36,10 @@ h2 {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 4px;
+    font-size: 20px;
 }
-.grid {
-    display: grid;
-    height: 600px;
-    grid-template-columns: auto auto;
-    gap: 20px;
-    /* align-content: center; */
-    /* justify-content: space-evenly; */
-    place-content: center space-evenly;
+.preco {
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
