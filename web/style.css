@@ -2,16 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    place-content: center;
-}
-
+    justify-content: center;
+   }
 body {
     margin: 0px;
-
 }
 h2 {
    background-color: #e7e7e7;
    border: 1px solid #c7c7c7;
    padding: 20px;
    margin: 0px;
+   /* flex: 1; */
 }

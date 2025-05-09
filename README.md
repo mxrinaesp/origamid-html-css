@@ -20,3 +20,9 @@ First contact with html and css
 
 <p> - imagens: mejor en svg (siempre hd), svg y png tienen bg transparente, no >1MB en la web </p>
 <a href="https://squoosh.app/">Squoosh</a>  
+
+- ## FLEX:
+  - flex-grow: (1) elementos ocupan todo el espacio vacío del ancho (0) no lo hacen
+  - flex-basis: parte del tamaño base del elemento para distribuir el espacio que sobra
+  - flex-shrink: determina si un elemento puede ser menor que su tamaño original (1) puede (0) no
+   * el más utilizado es flex: 1 (3 en 1 de las de arriba)
