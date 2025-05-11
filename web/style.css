@@ -1,25 +1,16 @@
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+h1 {
+    border: 2px solid #ccc;
+    padding: 20px 20px 400px 20px;
 }
-
-body {
-    margin: 0px;
-}
-
-h2 {
+p {
     background-color: #e7e7e7;
-    border: 1px solid #c7c7c7;
+    border: 1px solid black;
     padding: 20px;
+    font-size: 20px;
     margin: 0px;
-    /* flex: 1; */
 }
-
-.grid {
-    margin-top: 60px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+.fixo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
