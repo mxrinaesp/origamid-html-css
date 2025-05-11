@@ -1,16 +1,15 @@
-h1 {
+body {
+    height: 1200px;
+}
+div {
     border: 2px solid #ccc;
-    padding: 20px 20px 400px 20px;
+    margin-top: 40px;
+    padding: 20px 20px 40px 20px;
 }
-p {
+span {
     background-color: #e7e7e7;
-    border: 1px solid black;
-    padding: 20px;
-    font-size: 20px;
-    margin: 0px;
-}
-.fixo {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    position: relative;
+    bottom: 10px;
 }
