@@ -8,7 +8,7 @@ First contact with html and css
   -ctrl a: select all
   -ctrl z: undo // ctrl shift z: go back to what I undid
   -ctrl d: multiple selection to similar
-  -ctrl ç: comment code
+  -ctrl k c: comment code
   -ctrl b: hide side bar
   -alt + arrows: move a line up and down
 
@@ -26,3 +26,8 @@ First contact with html and css
   - flex-basis: parte del tamaño base del elemento para distribuir el espacio que sobra
   - flex-shrink: determina si un elemento puede ser menor que su tamaño original (1) puede (0) no
    * el más utilizado es flex: 1 (3 en 1 de las de arriba)
+
+   ## POSITIONS:
+   - z-index: como una montaña (fixed, relativo y absoluto)  necesita de propiedad position
+   - el relativo es "absolute"a sí mismo; con el relative funcionan los top, bottom, left, right
+   - absoluto SIEMPRE depende de un relativo padre (puede ser el body si no se ha especificado otro)
