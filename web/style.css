@@ -13,29 +13,34 @@ img {
     display: block;
 }
 
+p, h1, h2, h3 {
+    margin: 0;
+}
+p {
+    font-size: 20px;
+    line-height: 1.3;
+}
 
 .links {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    margin-bottom: 30px;
-    margin-top: 60px;
 }
+
 .links a {
     background-color: white;
     text-decoration: none;
     color: black;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border-radius: 4px;
+    text-transform: uppercase;
 }
-
 
 .produto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 .produto-info {
     text-align: right;
@@ -96,7 +101,7 @@ img {
 }
 .dados img {
     position: absolute;
-    
+
 }
 .dados h3 {
     padding: 0 40px;
