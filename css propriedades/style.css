@@ -1,13 +1,43 @@
-p {
-    font-size: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-style: italic;
-    line-height: 1.3;
-    text-decoration: none;
-    text-transform: lowercase;
-    text-indent: 5rem;
-    text-align: left;
-    /* text-shadow: 20px 20px 0 gray; */
-    letter-spacing: 0.2rem;
+.bicicletas {
+    height: 600px;
+    background-color: lightblue;
+    background-image: url("./img/bicicleta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+}
+
+h1 {
+    margin: auto;
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+.pattern {
+    height: 300px;
+    background-color: lightcoral;
+    background-image: url("./img/pattern.svg");
+    background-repeat: repeat;
+    /* background-size: 500px; */  
+}
+
+.linear {
+    height: 200px;
+    background-image: linear-gradient(
+        to right,
+        lightblue 0%,
+        lightcoral 30%,
+        red 50%,
+        orange 70%
+        )
+}
+
+.radial {
+    height: 200px;
+    background-image: radial-gradient(
+        blue,
+        red,
+        orange
+    );
 }
