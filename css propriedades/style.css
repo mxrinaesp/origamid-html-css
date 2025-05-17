@@ -1,11 +1,9 @@
-.px {
-    font-size: 32px;   
+body {
+    margin: 0;
 }
 
-.em {
-    font-size: 2em;
-}
-
-.rem {
-    font-size: 2rem;
+div {
+    background-color: lightblue;
+    width: calc(100vw - 100px);
+    height: 100vh;
 }
