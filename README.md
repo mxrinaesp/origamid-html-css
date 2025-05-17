@@ -38,6 +38,7 @@ First contact with html and css
   <li>px</li>
   <li>rem: equivale a 16px. Es el más usado y recomendado por accesibilidad. Toma como referencia siempre la raíz, <strong>el <html>.</strong> </li>
   <li>em: no recomendado. Igual que el <strong>rem</strong>, pero toma como referente su elemento padre </li>
-  <li>vh: altura de la pantalla visible(viewport height)</li>
-  <li>vw: anchura de la pantalla visible(viewport width)</li>
+  <li>vh: altura de la pantalla visible(viewport height: 100vh)</li>
+  <li>vw: anchura de la pantalla visible(viewport width: 100vw)</li>
+  <li>calc(): sirve para hacer cálculos en el css al momento usando +, -, /, *.</li>
 </ul>
