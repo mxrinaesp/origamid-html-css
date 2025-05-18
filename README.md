@@ -42,3 +42,11 @@ First contact with html and css
   <li>vw: anchura de la pantalla visible(viewport width: 100vw)</li>
   <li>calc(): sirve para hacer cálculos en el css al momento usando +, -, /, *.</li>
 </ul>
+
+<h3>Pseudo classes</h3>
+  - <strong>hover</strong>: pasar el ratón por encima;
+  - <strong>focus</strong>: se selecciona o cambia de color al darle /tab/;
+  - <strong>active</strong>: al clicar en él;
+  - <strong>visited</strong>: links ya visitados. Anula o escribe por encima de todos los anteriores.
+  - <strong>li:first-child, li:last-child, li:nth-child(número)</strong>: para seleccionar el primer elemento, último o cualquier posición de una lista. En el último, puedo poner (even) si quiero los pares, (odd) lo impares o (3n, 4n) si los quiero de 3 en 3 o de 4 en 4, etc.
+  - <strong>:not()</strong>: sirve para negar el efecto en ese elemento. P.ej: li:not(:firt-child) o h2:not(.contato)
