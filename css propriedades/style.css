@@ -1,66 +1,35 @@
-a {
-    display: inline-block;
-    padding: 1rem 2rem;
+h1::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #caf;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
     font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    background-color: #caf;
-    color: #217;
 }
 
-a:hover {
-    background-color: #adf;
-    color: 147;
+li::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(#caf, #fff);
+    border: 2px solid #caf;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-a:focus {
-    background-color: #cfa;
-    color: #371;
+p::first-line {
+    font-weight: bold;
 }
 
-a:active {
-    background-color: #ffa;
-    color: #761;
-}
-
-/* a:visited {
-    background-color: #fda;
-    color: #731;
-} */
-
-/* 
-.lista-1 li {
-    background-color: #ffa;
-} */
-
-.lista-1 li:first-child {
-    background-color: #caf;
-}
-
-.lista-1 li:last-child {
-    background-color: #CFA;
-}
-
-.lista-1 li:nth-child(3) {
-    background-color: aquamarine;
-}
-/* 
-.lista-2 li:nth-child(even) {
-    background-color: pink;
-} */
-/* 
-.lista-2 li:nth-child(odd) {
-    background-color: lightsalmon;
-} */
-
-.lista-2 li:nth-child(3n) {
-    background-color: burlywood;
-}
-
-.lista-3 li:not(:first-child, :last-child, .terceiro) {
-    background-color: #caf;
-}
-
-h2:not(.contato) {
-    text-decoration: underline;
+p::first-letter {
+    font-size: 2rem;
+    color:blue;
 }
