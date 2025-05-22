@@ -54,5 +54,14 @@ First contact with html and css
   - <strong>:not()</strong>: sirve para negar el efecto en ese elemento. P.ej: li:not(:firt-child) o h2:not(.contato)
 
 <h3>Pseudo Elements</h3>
-  - <strong>::before, ::after</strong>: añaden una decoración sin necesidad de crear un <span> en el html y evitan contaminar el doc con componentes de fines visuales. Necesitan de un /content:""/ para existir. 
+  - <strong>::before, ::after</strong>: añaden una decoración sin necesidad de crear un <span> en el html y evitan contaminar el doc con componentes de fines visuales. Necesitan de un /content:""/ para existir. Son un elemento diferente, son position absolute del padre relative.
   - <strong>::first-line, ::first-letter</strong>: se hacen cambios de color, tamaño, negrita, etc solo en esos elementos.
+
+  ## RESPONSIVO
+  <ul>
+    <li>medida img max-width: 100%. Poner % hace que sea responsivo</li>
+    <li>@media (max-width: 600px) {} significa que todo lo que ponga entre los corchetes se va a aplicar cuando la pantalla sea menor de o 600px. </li>
+    <li>@media (min-width: 700px) and (max-width: 900px), va a aplicar  estilo sólo cuando la pantalla esté entre 700 y 900px.</li>
+    <li>@media screen/print aplica los estilos solo en la pantalla o solo a la hora de imprimir.</li>
+    <li>la parte responsiva "@media (...) {}" poner al final del css para que no sea ignorada cuando se defina el style del sitio </li>
+  </ul>
