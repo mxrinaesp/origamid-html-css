@@ -32,6 +32,8 @@ First contact with html and css
    - el relativo es "absolute"a sí mismo; con el relative funcionan los top, bottom, left, right
    - absoluto SIEMPRE depende de un relativo padre (puede ser el body si no se ha especificado otro)
 
+  ## TAGS:
+  En <strong>article y section</strong>, ponemos <em>aria-label="libros"</em> para que el lector accesible lea el "título" que no se muestra en la pantalla. El <em>aria-labelledby="libcom"</em>, se usa cuando el título(h1,2..) sí está en la pantalla pero no queremos que lo lea dos veces. Se coloca un <em>id="libcom"</em> después del h: <h2 id="libcom">Libros de comedia</h2>
 
 <ul> 
  <h3>Unidades</h3>
