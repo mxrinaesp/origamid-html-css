@@ -1,40 +1,24 @@
 img {
     max-width: 100%;
+    display: block;
 }
 
 div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
 }
 
-h1 {
-    grid-column: 1 / -1;
-}
-
-@media (max-width: 600px) {
-    div {
-        grid-template-columns: 1fr;
-    }
-    h1 {
-        background-color: pink;
+@media (min-width: 400px) {
+    .minmax img {
+        grid-row: 2;
     }
 }
 
-@media (min-width: 1000px) {
-    html {
-        font-size: 150%;
-    }
+p {
+    font-size: 2rem;
 }
 
-@media (min-width: 700px) and (max-width: 900px) {
-    p {
-        background-color: lightskyblue;
-    }
-}
-
-@media screen {
-    body {
-        background: pink;
-    }
+.galeria {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
