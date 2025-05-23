@@ -3,22 +3,18 @@ img {
     display: block;
 }
 
-div {
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
-@media (min-width: 400px) {
-    .minmax img {
-        grid-row: 2;
-    }
+.cover img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top right;
 }
 
 p {
-    font-size: 2rem;
-}
-
-.galeria {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    font-size: 1.5rem;
 }
