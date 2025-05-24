@@ -36,6 +36,7 @@ nav.menu {
     border: 2px solid white;
     text-transform: uppercase;
 }
+
 .menu a:hover {
     border: 2px solid red;
 }
@@ -77,6 +78,9 @@ nav.menu {
 }
 .produto img {
     max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     display: block;
 }
 .produto .subtitulo {
@@ -87,6 +91,7 @@ nav.menu {
     padding: 40px;
     align-self: center;
     background-image: url("./img/onda.svg");
+    word-break: break-all;
 }
 .dados {
     background-color: white;
@@ -107,6 +112,7 @@ nav.menu {
 }
 .dados p {
     grid-column: 2;
+    word-break: break-all
 }
 
 footer {
@@ -116,4 +122,29 @@ footer {
     padding: 40px;
     margin-top: 60px;
     box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    body {
+        gap: 20px;
+    }
+    header img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .menu a {
+        font-size: 1.25rem;
+    }
+    .produto {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .produto-info::before {
+        display: none;
+    }
+    .produto .subtitulo {
+        text-align: center;
+    }
 }
