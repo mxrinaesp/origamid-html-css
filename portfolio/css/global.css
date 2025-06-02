@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
     font-family: "Fira Sans", Arial, sans-serif;
     margin: 0;
@@ -26,4 +39,12 @@ img {
     text-transform: uppercase;
     word-break: break-all;
     max-width: 5ch;
+}
+
+@media (max-width: 800px) {
+    .subtitulo {
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial;
+    }
 }
