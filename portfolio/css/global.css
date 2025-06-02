@@ -38,7 +38,7 @@ img {
     line-height: 1;
     text-transform: uppercase;
     word-break: break-all;
-    max-width: 5ch;
+    max-width: 4ch;
 }
 
 @media (max-width: 800px) {
