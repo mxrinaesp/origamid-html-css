@@ -5,15 +5,28 @@
 
 .formacao-container {
     max-width: 1200px;
-    padding: 40px 20px;
+    padding: 120px 20px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 100px;
+    position: relative;
+}
+
+.formacao-container::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(../img/detalhe.svg) no-repeat center;
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
 }
 
 .formacao .subtitulo {
     color: #000;
+    max-width: 5ch;
 }
 
 .formacao-texto {
@@ -118,4 +131,30 @@
 .cursos li {
     display: flex;
     justify-content: space-between;
+}
+
+
+@media (max-width: 800px) {
+    .formacao-container {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+    .formacao-container::after {
+        background-size: 50%;
+        width: 130px;
+        height: 100px;
+        bottom: -50px;
+        left: -10px;
+    }
+    .formacao .subtitulo {
+        color: #fff;
+    }
+    .formacao-texto {
+        font-size: 1.25rem;
+    }
+    .formacao-extra h3::before {
+        position: initial;
+        margin-bottom: 10px;
+    }
 }
