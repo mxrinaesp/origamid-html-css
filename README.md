@@ -14,7 +14,7 @@ First contact with html and css
 
 - CSS: los < a>, < button>, etc no cogen el color del body en el browser pero para que lo hagan hay que poner color: inhert (hereda el color del "padre-body")
 
-- #: significa id
+- #: significa id. POR EJ.: dentro de una tag section, escribo la clase y un id=??; si en los enlaces del menú el nav he escrito #??, al princhar en él, me llevará la la section que tenía ese id.
 - .: significa clase
 
 - blocks(nova linha e sozinho): < div>, < h1>, < p>...
@@ -29,7 +29,7 @@ First contact with html and css
   - flex-grow: (1) elementos ocupan todo el espacio vacío del ancho (0) no lo hacen
   - flex-basis: parte del tamaño base del elemento para distribuir el espacio que sobra
   - flex-shrink: determina si un elemento puede ser menor que su tamaño original (1) puede (0) no
-   * el más utilizado es flex: 1 (3 en 1 de las de arriba)
+   * el más utilizado es flex: 1 (3 en 1 de las de arriba) (los contenidos quedan del mismo tamaño)
 
 ## POSITIONS
    - z-index: como una montaña (fixed, relativo y absoluto)  necesita de propiedad position
@@ -83,6 +83,14 @@ First contact with html and css
   <ul>Header
     <li>cuando tenemos un max-width, el <em>margin: 0 auto</em> da márgenes laterales automáticos y proporcionales, simulando un autocentralizado en el elemento (en este caso el header).</li>
   </ul>
+
   <ul>Introdução
     <li>< br> sirve para romper una palabra en una p o h1.</li>
   </ul>
+
+  <ul>Formação
+    <li>! important hace que cualquier elemento sea más importante que el resto, sin importar su orden.</li>
+    <li>en el responsive, si los iconos se me cortan, cambio de position absolute a initial y se ponen encima del h3.</li>
+  </ul>
+
+  Usar <strong>Lighthouse</strong> en "inspeccionar" para optimizar la página web.
