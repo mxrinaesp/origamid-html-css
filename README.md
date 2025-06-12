@@ -79,7 +79,7 @@ First contact with html and css
     <li>con <strong>word-break: break-all</strong>, que rompe la palabra y el bloque de texto coge la anchura deseada sin que quede feo.</li>
   </ul>
 
-  ## PROYECTO PORTFOLIO 
+## PROYECTO PORTFOLIO
   <ul>Header
     <li>cuando tenemos un max-width, el <em>margin: 0 auto</em> da márgenes laterales automáticos y proporcionales, simulando un autocentralizado en el elemento (en este caso el header).</li>
   </ul>
@@ -94,3 +94,29 @@ First contact with html and css
   </ul>
 
   Usar <strong>Lighthouse</strong> en "inspeccionar" para optimizar la página web.
+
+## LÍNEA DE COMANDO (TERMINAL)
+  - <strong>ls</strong>: enumera los elementos (carpetas y archivos) que hay dentro de lo morado.
+  - <strong>cd + nombre_carpeta</strong>: entra dentro de esa carpeta.
+  - <strong>cd ..</strong>: sube a la carpeta de arriba.
+  - <strong>mkdir + nombre_carpeta</strong>: crea una carpeta nueva.
+  - <strong>touch + nombre_archivo.extensión</strong>: crea un archivo .css, .html, .js, etc.
+  - <strong>touch nombre_carpeta/nombre_archivo.extensión</strong>: crea un archivo dentro de una carpeta (e.j: touch css/style.css).
+  - <strong>rm nombre_archivo.extensión</strong>: elimina un archivo. ¡MUCHO CUIDADO!
+  - <strong>rm -r nombre_carpeta</strong>: elimina una carpeta.
+
+  <h2>NPM y CleanCSS</h2>
+  - cleancss -o nombre_archivo.min.extensión nombre_archivo.extensión (ej: cleancss -o style.min.css style.css): sirve para quitarle peso al archivo al subirlo a la web. !! IMPORTANTE CAMBIARLO EN LA META TAG DEL HTML.
+
+  <h2>GIT</h2>
+  - cuando creo un repositorio en github, tiene que ser mi user + .github.io (ej: mxrinaesp.github.io)
+  <ul>
+    <li>git add -A: añade todos los archivos al repositorio</li>
+  </ul>
+
+## FORMULARIOS
+  - la tag < form> incluye un action="url" y un method="get/post". 
+  - dentro va el campo <strong>< input type="text"></strong>. Es un campo solo de apertura.
+  - dentro va tb el <strong>< label for=""></strong> escribimos aquí el título o etiqueta del formulario <strong></ label>
+  - el <strong>for=""</strong> del label tendrá el mismo nombre que el <strong>id=""</strong> del input. Esto hace que al clickar en la palabra del label, se pueda escribir directamente en el input text.
+  - después de id="" en el input, ponemos <strong>name=""</strong>, que será la palabra que aparece en el link de la página después de darle al botón de enviar. NORMALMENTE EL FOR="", ID="" Y NAME="" TIENEN EL MISMO NOMBRE.
