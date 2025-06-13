@@ -115,8 +115,19 @@ First contact with html and css
   </ul>
 
 ## FORMULARIOS
-  - la tag < form> incluye un action="url" y un method="get/post". 
+  - la tag < form> incluye un action="url" y un method="get/post".
+  - < input type="" id="" name="" required placeholder="xxx-xx-xx-xx" disabled>
+  - < label for="" >< /label>
   - dentro va el campo <strong>< input type="text"></strong>. Es un campo solo de apertura.
   - dentro va tb el <strong>< label for=""></strong> escribimos aquí el título o etiqueta del formulario <strong></ label>
   - el <strong>for=""</strong> del label tendrá el mismo nombre que el <strong>id=""</strong> del input. Esto hace que al clickar en la palabra del label, se pueda escribir directamente en el input text.
   - después de id="" en el input, ponemos <strong>name=""</strong>, que será la palabra que aparece en el link de la página después de darle al botón de enviar. NORMALMENTE EL FOR="", ID="" Y NAME="" TIENEN EL MISMO NOMBRE.
+  - el <strong>input type="password"</strong> hace que se vea con puntitos aunque no está oculto porque se verá en la url con el name.
+  - si escribo <em>required</em> en el input, saltará un pop-up obligando a rellenar el campo.
+  - el <strong>input type="number"</strong> solo deja escribir números.
+  - el <strong>input type="date"</strong> sirve para poner fechas.
+  - el <strong>input type="checkbox"</strong> sirve para marcar una cajita con un tick. Si pongo value="aceito",
+  en la url aparecerá =aceito si está on. Permite seleccionar varios.
+  - el <strong>input type="radio"</strong> marca un circulito. Solo permite seleccionar uno u otro.
+  - si escribo <em>placeholder=""</em> en el input, dará una idea de cómo rellenar el campo. P.ej: xxx-xx-xx-xx sería el formato en que escribir el nº de tlf.
+  - si escribo <em>disabled</em> en el input, se deshabilita el campo.
