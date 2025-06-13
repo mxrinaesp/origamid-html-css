@@ -18,3 +18,18 @@ button {
     margin-top: 15px;
     display: block;
 }
+
+.checkbox, .radio {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.checkbox label, .radio label {
+    margin: 0;
+    display: inline;
+}
+.checkbox input, .radio input {
+    margin-top: 0;
+}

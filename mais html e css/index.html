@@ -10,15 +10,47 @@
 
 <body>
     <form action="./" method="">
-        <label for="nome">Nome</label>
+        <!-- <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome">
 
         <label for="tlf">Telefone</label>
         <input type="text" id="tlf" name="tlf" placeholder="XXX-XX-XX-XX">
 
         <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" disabled>
+        <input type="password" id="senha" name="senha" disabled> -->
 
+        <div class="checkbox">
+            <input type="checkbox" id="termos" name="termos" value="aceito">
+            <label for="termos">Aceito os termos e condições da empresa</label>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="anuncio" name="anuncio">
+            <label for="anuncio">Desejo receber anúncios.</label>
+        </div>
+
+        
+        <p>Entrega:</p>
+        <div class="radio">
+            <input type="radio" id="retirada" name="retirada">
+            <label for="retirada">Retirar no local.</label>
+        </div>
+        <div class="radio">
+            <input type="radio" id="entrega" name="retirada">
+            <label for="entrega">Entrega em casa.</label>
+        </div>
+
+        <p>Futuro:</p>
+        <div class="radio">
+            <input type="radio" id="retirada2" name="futuro">
+            <label for="retirada2">Retirar no local.</label>
+        </div>
+        <div class="radio">
+            <input type="radio" id="entrega2" name="futuro">
+            <label for="entrega2">Entrega em casa.</label>
+        </div>
+
+<!-- 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
 
@@ -26,7 +58,7 @@
         <input type="number" id="idade" name="idade">
 
         <label for="saida">Saída do hotel</label>
-        <input type="date" id="saida" name="saida">
+        <input type="date" id="saida" name="saida"> -->
 
         <button>Enviar</button>
     </form>
