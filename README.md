@@ -147,6 +147,6 @@ First contact with html and css
   - Atributos que terminen <strong>$</strong> con el valor. p.ej: [ href$=".com"]
 
  ### Signos
-  - >: p.ej: div > p... solo el p que es hijo directo de div.
-  - +: p.ej: p + p... todo p que venga después de un p. 
-  - *: selecciona todos los elementos del site.
+  -> : p.ej: div > p... solo el p que es hijo directo de div.
+  -+: p.ej: p + p... todo p que venga después de un p. 
+  -*: selecciona todos los elementos del site.
