@@ -148,5 +148,5 @@ First contact with html and css
 
  ### Signos
   -> : p.ej: div > p... solo el p que es hijo directo de div.
-  -+: p.ej: p + p... todo p que venga después de un p. 
-  -*: selecciona todos los elementos del site.
+  - +: p.ej: p + p... todo p que venga después de un p. 
+  - *: selecciona todos los elementos del site.
