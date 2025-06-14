@@ -118,6 +118,7 @@ First contact with html and css
   - la tag < form> incluye un action="url" y un method="get/post".
   - < input type="" id="" name="" required placeholder="xxx-xx-xx-xx" disabled>
   - < label for="" >< /label>
+  - < button>Enviar< /button>. Se puede modificar todo el CSS. !!cursor: pointer!! para que aparezca la manita y se vea que es elemento clicable.
   - dentro va el campo <strong>< input type="text"></strong>. Es un campo solo de apertura.
   - dentro va tb el <strong>< label for=""></strong> escribimos aquí el título o etiqueta del formulario.
   - el <strong>for=""</strong> del label tendrá el mismo nombre que el <strong>id=""</strong> del input. Esto hace que al clickar en la palabra del label, se pueda escribir directamente en el input text.
@@ -132,4 +133,20 @@ First contact with html and css
   - si escribo <em>placeholder=""</em> en el input, dará una idea de cómo rellenar el campo. P.ej: xxx-xx-xx-xx sería el formato en que escribir el nº de tlf.
   - si escribo <em>disabled</em> en el input, se deshabilita el campo.
   -
-  - la tag < select> incluye name="" y id="".Sería otra variante de <em>input</em>. Dentro de ella se colocan opciones de selección.
+  - la tag < select> incluye name="" y id="". Sería otra variante de <em>input</em>. Dentro de ella se colocan opciones de selección. Va junto con < label>.
+  - las opciones van dentro de la tag < option>, con un value="" que será lo que aparezca en la url.
+  - 
+  - la tag < textarea> incluye name="", id="", cols="" y rows="". Permite escribir un párrafo. Va junto con < label>.
+  Las cols apenas se usan; las rows indican cuántas líneas visibles hay en la caja, pero se pueden escribir más.
+
+## SELECTORES EN CSS
+ ### Atributos
+  - Selecciona solo los elementos cuyo atributo esté entre corchetes. p.ej: [ required]
+  - Selecciona solo el elemento que tenga el atributo y el valor. p.ej: [ name="recogida"] 
+  - Atributos que empiecen <strong>^</strong> con el valor. p.ej: [ href^="#"]
+  - Atributos que terminen <strong>$</strong> con el valor. p.ej: [ href$=".com"]
+
+ ### Signos
+  - >: p.ej: div > p... solo el p que es hijo directo de div.
+  - +: p.ej: p + p... todo p que venga después de un p. 
+  - *: selecciona todos los elementos del site.
