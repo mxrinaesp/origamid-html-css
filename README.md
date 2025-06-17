@@ -70,7 +70,7 @@ First contact with html and css
     <li>Poner la meta tag de viewport en el head, SI NO, NO FUNCIONA LA VERSIÓN MÓVIL.</li>
     <li>medida img max-width: 100%. Poner % hace que sea responsivo</li>
     <li>@media (max-width: 600px) {} significa que todo lo que ponga entre los corchetes se va a aplicar cuando la pantalla sea menor de 600px. </li>
-    <li>@media (min-width: 700px) and (max-width: 900px), va a aplicar  estilo sólo cuando la pantalla esté entre 700 y 900px.</li>
+    <li>@media (min-width: 700px) and (max-width: 900px), va a aplicar estilo sólo cuando la pantalla esté entre 700 y 900px.</li>
     <li>@media screen/print aplica los estilos solo en la pantalla o solo a la hora de imprimir.</li>
     <li>la parte responsiva "@media (...) {}" poner al final del css para que no sea ignorada cuando se defina el style del sitio </li>
     <li>object-fit: cover. Sirve para que la imagen se adapte al texto, y en vez de estirarse, hace "zoom". <strong>Solo usarlo si la imagen tiene sentido cortada.</strong></li>
@@ -150,3 +150,7 @@ First contact with html and css
   -> : p.ej: div > p... solo el p que es hijo directo de div.
   - +: p.ej: p + p... todo p que venga después de un p. 
   - *: selecciona todos los elementos del site.
+
+## PROPIEDADES CUSTOMIZADAS
+  - <strong>--verde: #caf;  var(--verde);</strong>: sirve para reutilizar una propiedad (un color, un borde específico, un tamaño de letra...). La primera parte se escribe en el html o en el <strong>:root</strong>, y la segunda es un función para escribir en cualquier tag donde quiera reutilizar esa propiedad (p.e: color: var(--verde);).
+  - @media (prefers-color-scheme: dark/light): 

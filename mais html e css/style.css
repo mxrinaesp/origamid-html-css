@@ -1,28 +1,13 @@
-body {
-    font-size: 2rem;
+:root {
+    --roxo: #84e;
+    --borda: 2px solid blue;
 }
 
-h2 {
-    color: black !important;
+h1 {
+    color: var(--roxo);
 }
 
-#produtos {
-    color: lightgreen;
-}
-
-.titulo {
-    color: tomato;
-    padding: 10px;
-}
-
-.titulo.teste {
-    color: blue;
-}
-
-html body section h2 {
-    border-left: 8px solid lightgreen;
-}
-
-html body #intro h2 {
-    border-left: 8px solid lightsalmon;
+p {
+    color: var(--roxo);
+    border: var(--borda);
 }
