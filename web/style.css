@@ -1,14 +1,34 @@
+:root {
+    --cor-primaria: #e21;
+    --cor-primaria-escura: #900;
+    --fundo-1: #e7e7e7;
+    --fundo-2: #ffffff;
+    --texto: #000000;
+    --subtitulo: rgba(0, 0, 0, 0.2);
+    --onda: url("./img/onda-clara.svg");
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fundo-1: #111111;
+        --fundo-2: #000000;
+        --texto: #ffffff;
+        --subtitulo: rgba(255, 255, 255, 0.2);
+        --onda: url("./img/onda-escura.svg");
+        }
+}
+
 body {
-    background-color: #e7e7e7;
+    background-color: var(--fundo-1);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     display: grid;
     gap: 60px;
     justify-items: center;
     margin-top: 60px;
+    color: var(--texto);
 }
 
-header img {
+header svg {
     max-width: 100%;
     display: block;
     margin: auto;
@@ -28,17 +48,17 @@ nav.menu {
     gap: 20px;
 }
 .menu a {
-    background-color: white;
+    background-color: var(--fundo-2);
     text-decoration: none;
-    color: black;
+    color: var(--texto);
     padding: 1rem 2rem;
     border-radius: 4px;
-    border: 2px solid white;
+    border: 2px solid var(--fundo-2);
     text-transform: uppercase;
 }
 
 .menu a:hover {
-    border: 2px solid red;
+    border: 2px solid var(--cor-primaria);
 }
 
 .produto {
@@ -49,7 +69,7 @@ nav.menu {
 }
 .produto-info {
     text-align: right;
-    background-color: white;
+    background-color: var(--fundo-2);
     padding: 40px;
     display: grid;
     gap: 20px;
@@ -59,7 +79,7 @@ nav.menu {
 }
 .produto-info::before {
     content: "";
-    background: #ee2211;
+    background: var(--cor-primaria);
     width: 60px;
     height: 4px;
     position: absolute;
@@ -67,14 +87,14 @@ nav.menu {
     right: -30px
 }
 .produto-info .botao {
-    color: white;
-    background-color: #ee2211;
+    color: #ffffff;
+    background-color: var(--cor-primaria);
     text-decoration: none;
     border-radius: 4px;
     padding: 1rem 2rem;
 }
 .produto-info .botao:hover {
-    background-color: #900;
+    background-color: var(--cor-primaria-escura);
 }
 .produto-img img {
     max-width: 100%;
@@ -86,15 +106,15 @@ nav.menu {
 .produto .subtitulo {
     font-size: 4rem;
     text-transform: uppercase;
-    color: #b6b6b6;
+    color: var(--subtitulo);
     text-align: right;
     padding: 40px;
     align-self: center;
-    background-image: url("./img/onda.svg");
+    background-image: var(--onda);
     /* word-break: break-all; */
 }
 .dados {
-    background-color: white;
+    background-color: var(--fundo-2);
     padding: 40px;
 }
 .dados .item {
@@ -102,13 +122,13 @@ nav.menu {
     grid-template-columns: auto 1fr;
     gap: 10px 20px;
     padding: 20px;
-    border-left: 4px solid white;
+    border-left: 4px solid var(--fundo-2);
 }
 .dados .item:nth-child(odd) {
-    background-color: #f7f7f7;
+    background-color: var(--fundo-1);
 }
 .dados .item:hover {
-    border-left: 4px solid red;
+    border-left: 4px solid var(--cor-primaria);
 }
 .dados p {
     grid-column: 2;
@@ -116,7 +136,7 @@ nav.menu {
 }
 
 footer {
-    background-color: white;
+    background-color: var(--fundo-2);
     text-align: center;
     width: 100%;
     padding: 40px;
