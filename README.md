@@ -153,4 +153,5 @@ First contact with html and css
 
 ## PROPIEDADES CUSTOMIZADAS
   - <strong>--verde: #caf;  var(--verde);</strong>: sirve para reutilizar una propiedad (un color, un borde específico, un tamaño de letra...). La primera parte se escribe en el html o en el <strong>:root</strong>, y la segunda es un función para escribir en cualquier tag donde quiera reutilizar esa propiedad (p.e: color: var(--verde);).
-  - @media (prefers-color-scheme: dark/light): 
+  - @media (prefers-color-scheme: light/dark): las propiedades que creo solo se usarán cuanso el sistema/navegador esté en modo claro/oscuro.
+  - <em>Es mejor poner el :root como predeterminado al principio y luego crear el @media con dark; así el tema padrón será el root a no ser que el usuario tenga activado el dark mode.</em>
