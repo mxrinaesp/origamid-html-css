@@ -173,6 +173,7 @@ First contact with html and css
       - 
   - box-sizing: border-box -> el padding y el border no aumentan el tamaño total del elemento, sino que se restan del ancho y alto especificados.
   - transition: 0.3s.
+  - margin-bottom: usar siempre cuando haya varios elementos en columna en vez de mezclar m-t, padding, etc.
   
   - la introducción va dentro de una tag main.
-  - cuando la introducción o lo que sea tiene texto a un lado e img al otro, meter todo el texto en una div. (así me ahorro tener que configurar el grid en rows y columns)
+  - cuando la introducción o lo que sea tiene texto a un lado e img al otro, meter todo el texto en una div (así me ahorro tener que configurar el grid en rows y columns)
