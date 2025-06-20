@@ -14,10 +14,10 @@ First contact with html and css
 
 - CSS: los < a>, < button>, etc no cogen el color del body en el browser pero para que lo hagan hay que poner color: inhert (hereda el color del "padre-body")
 
-- #: significa id. POR EJ.: dentro de una tag section, escribo la clase y un id=??; si en los enlaces del menú el nav he escrito #??, al princhar en él, me llevará la la section que tenía ese id.
+- #: significa id. POR EJ.: dentro de una tag "section", escribo la clase y un id=??; si en los enlaces del menú el nav he escrito #??, al princhar en él, me llevará a la section que tenía ese id.
 - .: significa clase
 
-- blocks(nova linha e sozinho): < div>, < h1>, < p>...
+- blocks(nova linha e sozinho): < div>, < h1>, < p>. < img>...
 - inline(mesma linha e nem width height margin): < a>, < span>... 
 - css display: inline-block : o melhor das dois opções
 
@@ -26,15 +26,16 @@ First contact with html and css
 
 ## FLEX
   - en <strong>flex-direction = row</strong>, el <em>justify-content</em> controla la distribución horizontal y el <em>align-items</em> controla la distribución vertical. En <strong>flex-direction = column</strong>, es al contrario.
-  - flex-grow: (1) elementos ocupan todo el espacio vacío del ancho (0) no lo hacen
-  - flex-basis: parte del tamaño base del elemento para distribuir el espacio que sobra
-  - flex-shrink: determina si un elemento puede ser menor que su tamaño original (1) puede (0) no
-   * el más utilizado es flex: 1 (3 en 1 de las de arriba) (los contenidos quedan del mismo tamaño)
+  - flex-grow: (1) elementos ocupan todo el espacio vacío del ancho (0) no lo hacen.
+  - flex-basis: parte del tamaño base del elemento para distribuir el espacio que sobra.
+  - flex-shrink: determina si un elemento puede ser menor que su tamaño original (1) puede (0) no.
+   * el más utilizado es flex: 1 (3 en 1 de las de arriba) (los contenidos quedan del mismo tamaño *
+  - flex-wrap: wrap -> permite que los elementos se reorganicen en la pantalla cuando la hago más pequeña, en vez de desaparecer.
 
 ## POSITIONS
-   - z-index: como una montaña (fixed, relativo y absoluto)  necesita de propiedad position
-   - el relativo es "absolute"a sí mismo; con el relative funcionan los top, bottom, left, right
-   - absoluto SIEMPRE depende de un relativo padre (puede ser el body si no se ha especificado otro)
+   - z-index: como una montaña (fixed, relativo y absoluto) necesita de propiedad position.
+   - el relativo es "absolute" a sí mismo; con el relative funcionan los top, bottom, left, right.
+   - absoluto SIEMPRE depende de un relativo padre (será el body si no se ha especificado otro).
 
 ## TAGS
   En <strong>article y section</strong>, ponemos <em>aria-label="libros"</em> para que el lector accesible lea el "título" que no se muestra en la pantalla. El <em>aria-labelledby="libcom"</em>, se usa cuando el título(h1,2..) sí está en la pantalla pero no queremos que lo lea dos veces. Se coloca un <em>id="libcom"</em> después del h: < h2 id="libcom">Libros de comedia< /h2>
@@ -67,7 +68,7 @@ First contact with html and css
 
 ## RESPONSIVO
   <ul>
-    <li>Poner la meta tag de viewport en el head, SI NO, NO FUNCIONA LA VERSIÓN MÓVIL.</li>
+    <li>poner la meta tag de viewport en el head. SI NO, NO FUNCIONA LA VERSIÓN MÓVIL.</li>
     <li>medida img max-width: 100%. Poner % hace que sea responsivo</li>
     <li>@media (max-width: 600px) {} significa que todo lo que ponga entre los corchetes se va a aplicar cuando la pantalla sea menor de 600px. </li>
     <li>@media (min-width: 700px) and (max-width: 900px), va a aplicar estilo sólo cuando la pantalla esté entre 700 y 900px.</li>
@@ -79,7 +80,7 @@ First contact with html and css
     <li>con <strong>word-break: break-all</strong>, que rompe la palabra y el bloque de texto coge la anchura deseada sin que quede feo.</li>
   </ul>
 
-## PROYECTO PORTFOLIO
+## PROYECTO PORTFOLIO LOBO
   <ul>Header
     <li>cuando tenemos un max-width, el <em>margin: 0 auto</em> da márgenes laterales automáticos y proporcionales, simulando un autocentralizado en el elemento (en este caso el header).</li>
   </ul>
@@ -140,22 +141,38 @@ First contact with html and css
   Las cols apenas se usan; las rows indican cuántas líneas visibles hay en la caja, pero se pueden escribir más.
 
 ## SELECTORES EN CSS
- ### Atributos
+  ### Atributos
   - Selecciona solo los elementos cuyo atributo esté entre corchetes. p.ej: [ required]
   - Selecciona solo el elemento que tenga el atributo y el valor. p.ej: [ name="recogida"] 
   - Atributos que empiecen <strong>^</strong> con el valor. p.ej: [ href^="#"]
   - Atributos que terminen <strong>$</strong> con el valor. p.ej: [ href$=".com"]
 
- ### Signos
+  ### Signos
   -> : p.ej: div > p... solo el p que es hijo directo de div.
   - +: p.ej: p + p... todo p que venga después de un p. 
   - *: selecciona todos los elementos del site.
 
 ## PROPIEDADES CUSTOMIZADAS
-  - <strong>--verde: #caf;  var(--verde);</strong>: sirve para reutilizar una propiedad (un color, un borde específico, un tamaño de letra...). La primera parte se escribe en el html o en el <strong>:root</strong>, y la segunda es un función para escribir en cualquier tag donde quiera reutilizar esa propiedad (p.e: color: var(--verde);).
+  - <strong>--verde: #caf;  var(--verde);</strong>: sirve para reutilizar una propiedad (un color, un borde específico, un tamaño de letra...). La primera parte se escribe en el html o en el <strong>:root</strong>, y la segunda es una función para escribir en cualquier tag donde quiera reutilizar esa propiedad (p.e: color: var(--verde);).
+  ### Dark&Light Mode
   - @media (prefers-color-scheme: light/dark): las propiedades que creo solo se usarán cuanso el sistema/navegador esté en modo claro/oscuro.
   - <em>Es mejor poner el :root como predeterminado al principio y luego crear el @media con dark; así el tema padrón será el root a no ser que el usuario tenga activado el dark mode.</em>
 
 ## CSS UTILITARIO
   - Consiste en crear clases con propiedades predefinidas para escribir en el HTML.
   - <em>Bootstrap</em> no necesita de CSS porque sus clases ya incluyen los valores.
+
+-----------------------------------------------------------------------------------------
+## PROYECTO FINAL
+  - al principio del CSS:
+      - dejar en margin: 0 el body, p, h1, ul...;
+      - establecer la font-family del body;
+      - list-style: none y padding: 0 de los ul;
+      - text-decoration: none y color: inherit de los a;
+      - max-width: 100% y display: block de los img;
+      - 
+  - box-sizing: border-box -> el padding y el border no aumentan el tamaño total del elemento, sino que se restan del ancho y alto especificados.
+  - transition: 0.3s.
+  
+  - la introducción va dentro de una tag main.
+  - cuando la introducción o lo que sea tiene texto a un lado e img al otro, meter todo el texto en una div. (así me ahorro tener que configurar el grid en rows y columns)
