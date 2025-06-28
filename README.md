@@ -19,7 +19,7 @@ First contact with html and css
 
 - blocks(nova linha e sozinho): < div>, < h1>, < p>. < img>...
 - inline(mesma linha e nem width height margin): < a>, < span>... 
-- css display: inline-block : o melhor das dois opções
+- css display: inline-block : o melhor das dois opções (a)
 
 - imagens: mejor en svg (siempre hd), svg y png tienen bg transparente, no >1MB en la web
 <a href="https://squoosh.app/">Squoosh</a>  
@@ -105,6 +105,8 @@ First contact with html and css
   - <strong>touch nombre_carpeta/nombre_archivo.extensión</strong>: crea un archivo dentro de una carpeta (e.j: touch css/style.css).
   - <strong>rm nombre_archivo.extensión</strong>: elimina un archivo. ¡MUCHO CUIDADO!
   - <strong>rm -r nombre_carpeta</strong>: elimina una carpeta.
+  - Para arreglar un fallo en el mensaje del commit: <strong>git commit --amend</strong>, ctrl o, ctrl x.
+  Si ya hice push, después del amend: <strong>git push -f</strong>
 
   <h2>NPM y CleanCSS</h2>
   - cleancss -o nombre_archivo.min.extensión nombre_archivo.extensión (ej: cleancss -o style.min.css style.css): sirve para quitarle peso al archivo al subirlo a la web. !! IMPORTANTE CAMBIARLO EN LA META TAG DEL HTML.
@@ -174,6 +176,13 @@ First contact with html and css
   - box-sizing: border-box -> el padding y el border no aumentan el tamaño total del elemento, sino que se restan del ancho y alto especificados.
   - transition: 0.3s.
   - margin-bottom: usar siempre cuando haya varios elementos en columna en vez de mezclar m-t, padding, etc.
+  - box-shadow: 0px 0px 0px #fff -> lado, abajo, borroso, color.
   
   - la introducción va dentro de una tag main.
-  - cuando la introducción o lo que sea tiene texto a un lado e img al otro, meter todo el texto en una div (así me ahorro tener que configurar el grid en rows y columns)
+  - cuando la introducción o lo que sea tiene texto a un lado e img al otro, meter texto e img en divs diferentes.
+  - Si quiero crear una ilusión de que la foto "sobresale" del container, es poner un box-shadow: inset 0 -120px white en introducao-bg y ajustar el padding-bottom en introducao-conteudo.
+
+  - en el CSS utilitario: para la tipografía, puedo escribir font: weight size/line-height "family" (p.ej: font: 600 4rem/1.125 "Poppins")
+
+  - en la bicicletas-lista debajo de la intro, para que el h2 de ambas partes se mantenga alineado, coloco mismo max-width(1200px) y margin auto!!; si coloco padding, recordar el border-box para que mantenga los 1200px.
+  - si quiero un scroll en solo un apartado del site, p. ej, en una lista de bicicletas: dentro de la ul, <strong>overflow-x: auto</strong> permite hacer scroll hacia el lado y ver las 3 fotos (antes hemos puesto min-width en el li para que las fotos sean grandes)
