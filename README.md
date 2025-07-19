@@ -151,7 +151,7 @@ First contact with html and css
 
   ### Signos
   -> : p.ej: div > p... solo el p que es hijo directo de div.
-  - +: p.ej: p + p... todo p que venga después de un p. 
+  - +: p.ej: p1 + p... todo p que venga después de un p1. (solo el siguiente hermano adyacente)
   - *: selecciona todos los elementos del site.
 
 ## PROPIEDADES CUSTOMIZADAS
@@ -172,17 +172,35 @@ First contact with html and css
       - list-style: none y padding: 0 de los ul;
       - text-decoration: none y color: inherit de los a;
       - max-width: 100% y display: block de los img;
-      - 
+    
   - box-sizing: border-box -> el padding y el border no aumentan el tamaño total del elemento, sino que se restan del ancho y alto especificados.
   - transition: 0.3s.
   - margin-bottom: usar siempre cuando haya varios elementos en columna en vez de mezclar m-t, padding, etc.
   - box-shadow: 0px 0px 0px #fff -> lado, abajo, borroso, color.
+  - transform: translateX(2px) -> cuando hay un icono en el botón y queremos que se "traslade" 2px a la derecha al hacer hover.
   
   - la introducción va dentro de una tag main.
-  - cuando la introducción o lo que sea tiene texto a un lado e img al otro, meter texto e img en divs diferentes.
-  - Si quiero crear una ilusión de que la foto "sobresale" del container, es poner un box-shadow: inset 0 -120px white en introducao-bg y ajustar el padding-bottom en introducao-conteudo.
+  - cuando la introducción o lo que sea tiene texto a un lado e img al otro, meter texto e img en divs diferentes. La imagen tiene que tener height y width:100%; object-fit: cover.
+  - si quiero crear una ilusión de que la foto "sobresale" del container, es poner un box-shadow: inset 0 +/-120px white en x-bg y ajustar el padding-bottom o top en x-conteudo. O también en el bg poner background: linear-gradient (to right, white 30%, black 30%).
 
   - en el CSS utilitario: para la tipografía, puedo escribir font: weight size/line-height "family" (p.ej: font: 600 4rem/1.125 "Poppins")
 
   - en la bicicletas-lista debajo de la intro, para que el h2 de ambas partes se mantenga alineado, coloco mismo max-width(1200px) y margin auto!!; si coloco padding, recordar el border-box para que mantenga los 1200px.
   - si quiero un scroll en solo un apartado del site, p. ej, en una lista de bicicletas: dentro de la ul, <strong>overflow-x: auto</strong> permite hacer scroll hacia el lado y ver las 3 fotos (antes hemos puesto min-width en el li para que las fotos sean grandes)
+  - <em>si quiero poner margin, padding, etc en un span -> ponerlo en display block</em>.
+  - colocar <strong>width: max-content</strong> para que el h3 de la tecnologia-vantagens no quebre al disminuir patalla.
+
+  - en nossos parceiros, la <em>ul</em> es un grid porque son varias columnas. Pero cada <em>li</em> es un flex para poder dejar las img con margin auto y que queden alineadas.
+  - para hacer una cuadrícula y quitar los border exteriores: li:nth-child(n + 0) y border-left/top.
+
+  - en el footer: en un enlace <em>a</em>, puedo poner href="tel:+xx xxxxx" o href="mailto:aaaa@aaa.aa" y me lleva directamente al clickar a la app del tlf o la del correo.
+
+  - <strong>RESPONSIVO SIN MEDIA QUERY:</strong> en la ul de seguros/vantagens.css, en el <em>grid-template-columns</em>, en vez de poner 1fr 1fr 1fr; pongo <em>: repeat(auto-fit, minmax(280px-p.ej-, max-content))</em>. De esta manera, según el ancho de la página, se crearán automáticamente 3, 2 o 1 columna.
+
+  - si tengo una div de 3 imágenes y quiero que se pongan en triángulo (1 arriba y 2 abajo), tengo que hacer un <em>display:flex</em> del padre con flex-wrap; luego mencionar al padre y a las img (p-ej: .bicicleta-imagens img {}) con <em>flex:1 y min-width de 200px</em>; y por último, img:first-child <em>min-width: 100%</em>.
+
+  - Cuando tengo enlaces (como en la parte de contato: email, tlf, etc), mejor poner display: block pq si pongo inline-block, al aumentar el width de la página, se va a poner al lado en vez de uno encima de otro. También poner max-width: max-content para que solo puedan clickar encima del enlace.
+
+  -<strong>BLOQUE CON VISIBILIDAD ALTERNADA SIN JAVASCRIPT ACTIVADO CON INPUT RADIO</strong> Primero creo dos inputs type=radio y dos bloques(div) con los respectivos ids: input#bikcraft, input#seguro,div#orcamento-bikcraft y div#orcamento-seguro. Estilizo los bloques por defecto con display: none; y entonces creo un estilo condicional para cada bloque con su input :checked ~ respectivo agregando el display: block; Por ejemplo: <em>#bikcraft:checked ~ #orcamento-bikcraft { display: block; }</em>  
+
+  - cuando quiero estilizar un input, tengo que especificar su tipo. P.ej.: .orcamento-produto input[type="text"]
