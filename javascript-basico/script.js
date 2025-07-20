@@ -1,12 +1,11 @@
-const Nome = "JavaScript";
+const nav = document.querySelector('nav');
+const produtos = document.querySelector('.produtos a');
 
-console.log(Nome);
+console.log(nav);
+console.log(produtos.href);
+console.dir(nav);
 
+nav.style.backgroundColor = "black";
+nav.style.padding = "1rem";
 
-
-
-let nome = "JavaScript";
-
-nome = "Teste";
-
-console.log(nome);
+nav.classList.add("ativo");
