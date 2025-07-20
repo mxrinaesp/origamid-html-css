@@ -204,3 +204,21 @@ First contact with html and css
   -<strong>BLOQUE CON VISIBILIDAD ALTERNADA SIN JAVASCRIPT ACTIVADO CON INPUT RADIO</strong> Primero creo dos inputs type=radio y dos bloques(div) con los respectivos ids: input#bikcraft, input#seguro,div#orcamento-bikcraft y div#orcamento-seguro. Estilizo los bloques por defecto con display: none; y entonces creo un estilo condicional para cada bloque con su input :checked ~ respectivo agregando el display: block; Por ejemplo: <em>#bikcraft:checked ~ #orcamento-bikcraft { display: block; }</em>  
 
   - cuando quiero estilizar un input, tengo que especificar su tipo. P.ej.: .orcamento-produto input[type="text"]
+
+-----------------------------------------------------------------------------------------------
+
+# JAVASCRIPT BÁSICO
+ - <strong>console.log('nombre_variable')</strong>
+ - <strong>console.dir(nombre_variable)</strong>: me enseña todas las propiedades y métodos de esa variable
+ - variables utilizadas: <strong>const</strong> y <strong>let</strong>;
+    <em>const</em>: es sensitive case; empezar siempre con letra, no con nº; usar underline para separar; solo un valor para una constante (el primero). Por ej.: const Nome = "JavaScript"; -- Nome = "Teste"; -- console.log(Nome); va a aparecer JavaScript en el Console.
+    <em>let</em>: igual solo que sí puedo reescribir por ej.: let Nome = "JavaScript"; -- Nome = "Teste"; -- console.log(Nome); -- y aparecerá Teste porque es el último escrito.
+
+    Normalmente uso const. El let es solo para casos específicos.
+
+ - la función <strong>document.querySelector('')</strong>, selecciona un elemento/documento del site. Por ej.: nav = document.querySelector ('nav');, seleccionará la tag < nav>; produtos = document.querySelector('.produtos a');, seleccionará el "a" que esté dentro de la class='produtos'.
+    ¿QUÉ HACEMOS CON EL ELEMENTO SELECCIONADO? después del valor, coloco . y la función que sea. Por ej:
+      - produtos.remove(); -> elimina el elemento 'produtos' del DOM;
+      - console.log(produtos.href); -> me da el url completo el href de produtos
+      - nav.style.backgroundColor = "black";  o  nav.style.padding = "1rem"; -> para modificar un valor de estilo del elemento, como cambiar el bg a negro. 
+      - nav.classList.add("ativo"); -> para añadir una clase (en este caso a nav), que se llame .ativo para yo poner estilizarla en el css y que se muestre en el site.
