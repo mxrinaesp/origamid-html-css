@@ -1,11 +1,19 @@
-const nav = document.querySelector('nav');
-const produtos = document.querySelector('.produtos a');
+const texto = "Olá";
+const pergunta = "como você está?";
 
-console.log(nav);
-console.log(produtos.href);
-console.dir(nav);
+console.log(texto + " " + pergunta);
 
-nav.style.backgroundColor = "black";
-nav.style.padding = "1rem";
 
-nav.classList.add("ativo");
+
+let total = 0;
+
+const compras = 30;
+const impostos = 10;
+
+total = compras + impostos;
+
+console.log(total);
+
+const dobro = total * 2;
+
+console.log(dobro);
